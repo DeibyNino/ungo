@@ -1,0 +1,23 @@
+.titulo-home {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #b10e0e;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100vh;
+  border: 1px solid #000;
+}
+.section1 {
+  background-color: #5a5959;
+}
+.section2 {
+  background-color: #b10e0e;
+}
+.section3 {
+  background-color: #1ee0c0;
+}
