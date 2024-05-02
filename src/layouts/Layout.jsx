@@ -10,7 +10,13 @@ const Layout = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <div
+        style={{
+          paddingTop: "50px",
+        }}
+      >
+        <Outlet />
+      </div>
     </div>
   );
 };
