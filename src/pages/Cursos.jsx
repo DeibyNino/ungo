@@ -4,13 +4,14 @@ import CabeceraCursos from "../components/Cursos/CabeceraCursos";
 import "../styles/CursosStyles.css";
 import NuestrosCursos from "../components/Cursos/NuestrosCursos";
 import Sistemas from "../components/Cursos/Sistemas";
+import CursosComponent from "../components/Cursos/CursosComponent";
 
 const Cursos = () => {
   return (
     <div>
-      <CabeceraCursos />
-      <NuestrosCursos />
-      <Sistemas />
+
+      <NuestrosCursos/>
+      
     </div>
   );
 };

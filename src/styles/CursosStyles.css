@@ -5,3 +5,33 @@
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+.curso-cards {
+  border-radius: 15px;
+  border: 1px solid #f9f9f9;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.curso-card {
+  width: 350px;
+  height: 500px;
+  border-radius: 15px;
+  border: 1px solid #f9f9f9;
+  padding: 1rem;
+  box-shadow: 2px 2px 15px #aca9a9;
+}
+
+.curso-card:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #504e4e;
+  transition: ease-in-out 300ms;
+}
+
+.curso-card img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 15px;
+}
