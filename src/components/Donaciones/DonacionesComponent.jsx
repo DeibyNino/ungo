@@ -14,6 +14,7 @@ const DonacionesComponent = () => {
       <h1>Contactanos si deseas realizar tu aporte</h1>
       <p>Correo: test@email.com </p>
       <p>Telefono: +57 1234567890</p>
+      <button>donar</button>
     </div>
   );
 };
