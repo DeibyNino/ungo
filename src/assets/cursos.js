@@ -13,6 +13,7 @@ const cursosArray = [
     imagen: imagenContabilidad,
     sedes: "Moniquirá, Togui,Chia,Bogota,Ubate",
     url: "contabilidad",
+    duracion: "2 semestres",
   },
   {
     titulo: " Tecnico en Sistemas",
@@ -21,6 +22,7 @@ const cursosArray = [
     imagen: imagensistemas,
     sedes: "Moniquirá, Togui",
     url: "sistemas",
+    duracion: "2 Semestres",
   },
   {
     titulo: "Atencion a la Primera Infancia",
@@ -29,14 +31,16 @@ const cursosArray = [
     imagen: imagenprimerainfancia,
     sedes: "Bogota, Togui,Moniquirá,Ubate",
     url: "primerainfancia",
+    duracion: "2 Semestres",
   },
   {
     titulo: "Ingles A1-C1",
     descripcion:
       "¿Quieres aprender inglés de manera efectiva? En la Fundación Ungo, te ofrecemos un curso diseñado para todos los niveles",
     imagen: imageningles,
-    sedes: "Bogota,Chia,Togui,Toniquirá,Ubate",
+    sedes: "Bogota,Chia,Togui,Moniquirá,Ubate",
     url: "ingles",
+    duracion: "2 semestres",
   },
   {
     titulo: "Gestion Empresarial",
@@ -45,6 +49,7 @@ const cursosArray = [
     imagen: imagengestionempresarial,
     sedes: "Bogota,Chia,Togui,Moniquirá,Ubate",
     url: "gestionempresarial",
+    duracion: "2 semestres",
   },
   {
     titulo: "Seguridad y Salud en el Trabajo",
@@ -53,6 +58,7 @@ const cursosArray = [
     imagen: imagenseguridadysaludeneltrabajo,
     sedes: "Bogota,Chia,Moniquirá,Ubate",
     url: "seguridadysaludeneltrabajo",
+    duracion: "2 semestres",
   },
   {
     titulo: "Preescolar",
@@ -61,6 +67,7 @@ const cursosArray = [
     imagen: imagenpreescolar,
     sedes: "Chia",
     url: "preescolar",
+    duracion: "2 semestres",
   },
 ];
 

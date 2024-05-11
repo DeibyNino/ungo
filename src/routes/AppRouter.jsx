@@ -6,6 +6,7 @@ import Layout from "../layouts/Layout";
 import Contact from "../pages/Contact";
 import Cursos from "../pages/Cursos";
 import About from "../pages/About";
+import Sistemas from "../pages/cursos/Sistemas";
 
 // El AppRouter es el componente que se encarga de manejar las rutas de la aplicación.
 // En este caso, se está utilizando el Router de React Router Dom, el cual es un componente que se encarga de manejar las rutas de la aplicación.
@@ -23,6 +24,24 @@ const AppRouter = () => {
           <Route path="/sedes-page" element={<Sedes />} />
           <Route path="/contact-page" element={<Contact />} />
           <Route path="/cursos-page" element={<Cursos />} />
+          <Route path="/cursos-page/sistemas" element={<Sistemas />} />
+          <Route path="/cursos-page/contabilidad" element={<Contabilidad />} />
+          <Route path="/cursos-page/ingles" element={<Ingles />} />
+          {/* 
+
+          <Route
+            path="/cursos-page/primerainfancia"
+            element={<Primerainfancia />}
+          />
+          <Route
+            path="/cursos-page/gestionempresarial"
+            element={<Gestionempresarial />}
+          />
+          <Route
+            path="/cursos-page/seguridadysaludeneltrabajo"
+            element={<Seguridadysaludeneltrabajo />}
+          />
+          <Route path="/cursos-page/preescolar" element={<Preescolar />} /> */}
           <Route path="/about-page" element={<About />} />
           <Route path="*" element={<h1>404 - Not Found</h1>} />
         </Route>
