@@ -1,4 +1,5 @@
 import React from "react";
+import DonacionesComponent from "../components/Donaciones/DonacionesComponent";
 
 const Sedes = () => {
   return (
@@ -11,6 +12,7 @@ const Sedes = () => {
         facilisis eros ligula nec nunc. Nullam nec nunc nec nunc ultricies
         ultricies. Nullam nec nunc nec nunc ultricies ultricies. Nullam nec nunc
       </p>
+      <DonacionesComponent />
     </div>
   );
 };

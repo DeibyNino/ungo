@@ -1,11 +1,5 @@
 .main-contact {
   background-color: blueviolet;
-  min-height: 50vh;
-  font-size: 50px;
-  justify-content: center;
-  letter-spacing: 10px;
-  font-style:oblique;
-  color:rgb(6, 6, 59);
-  border-radius: 100px;
-  border-color: red;
+  min-height: 100vh;
+  
 }

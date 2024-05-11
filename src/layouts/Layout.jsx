@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/NavBar/Navbar";
+import Footer from "../components/NavBar/Footer";
 
 // El Layout es un componente que se encarga de definir la estructura de la aplicación.
 // En este caso, el Layout es un componente funcional que recibe un prop children.
@@ -10,7 +11,14 @@ const Layout = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <div
+        style={{
+          paddingTop: "50px",
+        }}
+      >
+        <Outlet />
+      </div>
+      <Footer />
     </div>
   );
 };

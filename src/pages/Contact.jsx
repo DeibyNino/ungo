@@ -16,10 +16,10 @@ const Contact = () => {
                     </div>
                     <form className="form-contact">
                         <div className="input-box-contact">
-                            <input type="text" name="username" ></input>
+                            <input type="text" placeholder="Nombre y apellido" required></input>
                            </div>  
                            <div className="input-box-contact">
-                            <input type="text" name="correoelectronico"></input>
+                            <input type="email" required placeholder="Correo electrónico"></input>
                             <div className="input-box-contact">
                             <input type="text" placeholder="Asunto"></input>
                            
