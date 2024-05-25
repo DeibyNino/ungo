@@ -1,3 +1,448 @@
+/* DISEÑO SWIPER */
+
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  /* background: #eee; */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  /* margin: 0;
+  padding: 0; */
+}
+
+.swiper-slide{
+  width: 98vw;
+  height: 88vh;
+  display: flex;
+  /* border: 1px solid aqua ; */
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+/* SLIDE A */
+
+.wrapper-slideA{
+  margin: 15px;
+  justify-content: left;
+}
+
+.logo-slideA{
+  max-width: 70vh;
+  float: left;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  margin-right: 15px;
+  background-position:center ;
+}
+
+.box-title-slideA h1{
+  color: #be001f;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 4vw;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.box-title-slideA p {
+  color: #000;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.9em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-title-slideA button {
+ display: flexbox;
+ justify-content: center;
+ align-items: center;
+ background: #ff9500;
+ margin: 22px;
+ font-size: 4vh;
+ font-weight: bolder;
+ font-style: italic;
+ font-family:Arial, Helvetica, sans-serif;
+ border-radius: 15px;
+ padding: 5px 15px;
+ border: 1px solid #ff930a;
+}
+
+.box-title-slideA button:hover{
+ background: #ffb91b;
+ margin: 22px;
+ font-size: 4vh;
+ font-weight: bolder;
+ font-style: italic;
+ font-family:Arial, Helvetica, sans-serif;
+ border-radius: 15px;
+ padding: 5px 15px;
+ border: 1px solid #ff9500;
+ transition: all ease-in-out 300ms;
+}
+
+
+/* SLIDE B CURSOS */
+
+.swiper-slideB-content {
+  position: relative;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),url("../assets/images/home/cursosestudiantes.jpg");;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(B, 1fr);
+}
+
+
+.swiper-slideB-content::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .6) ;
+}
+
+
+.swiper-slideB-content .info-slideB {
+  grid-column: 7 / 10;
+  grid-row: 3 / 7;
+  color: #fff;
+  z-index: 1;
+}
+
+.swiper-slideB-content .info-slideB h1 {
+  color:#ff930a;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 3vw;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.swiper-slideB-content .info-slideB p {
+  color:#fff;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.swiper-slideB-content .info-slideB button{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: #be001f;
+  color: #fff;
+  margin: 5px;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 8px ;
+  padding: 8px 28px;
+  border: 1px solid #e70026;
+}
+
+.swiper-slideB-content .info-slideB button:hover {
+  background: #e70026;
+  color: #fff;
+  margin: 5px;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 8px ;
+  padding: 8px 28px;
+  border: 1px solid #be001f;
+  transition: all ease-in-out 300ms;
+}
+
+
+/* SlIDE C SEDES */
+
+
+.content-slideC{
+  position: relative;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../assets/images/home/slideCimage.jpg");;
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(B,1fr);
+}
+
+.content-slideC::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+
+.content-slideC .info-slideC {
+  grid-column: 2 / 10;
+  grid-row: 3 / 7;
+  color: #fff;
+  z-index: 1;
+}
+
+.content-slideC .info-slideC h1 {
+  color: #ff930a;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 3vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.content-slideC .info-slideC p {
+  color: #fff;
+  font-weight: bolder;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.content-slideC .info-slideC button {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: #be001f;
+  color: #fff;
+  margin: 20px;
+  font-size: 4vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  padding: 5px 25px;
+  border: 1px solid  #e70026;
+}
+
+.content-slideC .info-slideC button:hover {
+  background: #e70026 ;
+  margin: 20px;
+  font-size: 4vh;
+  color: #fff;
+  font-weight: bolder;
+  font-style: italic;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  padding: 5px 25px;
+  border: 1px solid  #be001f;
+  transition: all ease-in-out 300ms;
+}
+
+
+/* SLIDE D  DONACIONES */
+
+.wrapper-slideD{
+  margin: 1px;
+  justify-content: left;
+}
+
+.image-slideD{
+  max-width: 70vh;
+  float: left;
+  border: 3px solid none;
+  border-radius: 10px;
+  margin-right: 120px;
+}
+
+.box-info-slideD h1{
+  color: #be001f;
+  font-weight: bolder;
+  font-style: italic;
+  margin-top: 100px;
+  font-size: 4vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box-info-slideD p {
+  color: #000;
+  font-weight: normal;
+  text-align: center;
+  margin: 20px;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-info-slideD button {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  background: #ff9500;
+  margin: 22px;
+  font-size: 4vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  padding: 5px 15px;
+  border:1px solid #ffb91b;
+}
+
+.box-info-slideD button:hover{
+  background: #ffb91b;
+  margin: 22px;
+  font-size: 4vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  padding: 5px 15px;
+  border: 1px solid #ff9500;
+  transition: all ease-in-out 300ms;
+ }
+
+/* SLIDE E CONTACTOS */
+
+.slideE-content {
+  position: relative;
+  height: 90vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../assets/images/home/ungosedes.jpg");;
+  background-position:center ;
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(B,1fr);
+}
+
+.slideE-content::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.slideE-content .info-slideE {
+  grid-column: 7/10 ;
+  grid-row: 3/7;
+  color: #fff;
+  z-index: 1;
+}
+
+.slideE-content .info-slideE h1 {
+  color: #ff930a;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 4vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.slideE-content .info-slideE button {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: #be001f;
+  color: #fff;
+  margin: 5px;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+  padding: 8px 28px;
+  border: 1px solid #e70026;
+}
+
+.slideE-content .info-slideE button:hover {
+  background: #e70026;
+  color: #fff;
+  margin: 5px;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius:8px;
+  padding: 8px 28px;
+  border: 1px solid #be001f;
+  transition: all ease-in-out 300ms;
+}
+
+
+
+/* SECTION HOME */
+
 .titulo-home {
   font-size: 2.5em;
   font-weight: bold;
@@ -12,12 +457,359 @@
   height: 100vh;
   border: 1px solid #000;
 }
-.section1 {
+/* .section1 {
   background-color: #5a5959;
+} */
+
+
+
+/* Section cursos - welcome*/
+
+.title-sectionwelcome h1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  color: #be001f;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 4vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.section2 {
+
+
+.card-container-section{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin-top: 10px;
+}
+
+.card{
+  width: 325px;
+  background-color:#0a1a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  margin: 20px;
+}
+
+/* .card img{
+  width: 100%;
+  height: auto;
+} */
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3{
+  font-size: 20px;
+  color:#fff;
+  margin-bottom:8px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-style: italic;
+  font-weight: bolder;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Section Sedes Home */
+
+
+.info-sedeshome {
+  background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.9)),url("../assets/images/home/slideCimage.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  padding: 35px;
+}
+
+.info-sedeshome h1 {
+  color: #ff930a;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 4vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.info-sedeshome button {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: #be001f;
+  color: #fff;
+  margin: 5px;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+  padding: 8px 28px;
+  border: 1px solid #e70026;
+}
+
+.info-sedeshome button:hover {
+  background: #e70026;
+  color: #fff;
+  margin: 5px;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius:8px;
+  padding: 8px 28px;
+  border: 1px solid #be001f;
+  transition: all ease-in-out 300ms;
+}
+
+
+
+/* Section About Home */
+
+.section-home-about {
+  width: 100%;
+  padding: 78px 0px;
+  background-color: none;
+}
+
+.main-sectionabout-home img {
+  height: auto;
+  width: 420px;
+}
+
+.main-sectionabout-home{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-texthome{
+  width: 550px;
+}
+
+.about-texthome h1{
+  color: #be001f;
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.about-texthome h4 {
+  color: #000;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+
+.about-texthome p {
+  color: #000;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 45px;
+}
+
+.about-texthome button {
+  background: #ff9500;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  padding: 13px 30px;
+  border:1px solid #ffb91b;
+}
+
+.about-texthome button:hover{
+  background: #ffb91b;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  padding: 13px 30px;
+  border: 1px solid #ff9500;
+  transition: all ease-in-out 300ms;
+ }
+
+
+
+
+
+
+
+/* Section Donaciones Home */
+
+.description-donations{
+  background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)),url("../assets/images/home/cursosestudiantes.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  padding: 35px;
+}
+
+.description-donations h1 {
+  color: #ff930a;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 4vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.description-donations button {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: #be001f;
+  color: #fff;
+  margin: 5px;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+  padding: 8px 28px;
+  border: 1px solid #e70026;
+}
+
+.description-donations button:hover {
+  background: #e70026;
+  color: #fff;
+  margin: 5px;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius:8px;
+  padding: 8px 28px;
+  border: 1px solid #be001f;
+  transition: all ease-in-out 300ms;
+}
+
+
+
+
+
+
+
+/* Footer Section Home */
+
+.section-footerHome {
+ width: 100%;
+ /* background-color:white; */
+}
+
+
+.section-footerHome .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+
+.section-footerHome .grupo-1 .box-footer figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.section-footerHome .grupo-1 .box-footer figure img {
+  width: 250px;
+}
+
+.section-footerHome .grupo-1 .box-description-footer h2{
+  color: #be001f;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section-footerHome .grupo-1 .box-description-footer P {
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  /* font-weight: bolder; */
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-footerHome .grupo-1 .box-contactos-footer h2{
+  color: #be001f;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 40px;
+  /* font-weight: bolder; */
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section-footerHome .grupo-1 .box-contactos-footer P {
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  /* font-weight: bolder; */
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-footerHome .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.section-footerHome .grupo-2 small {
+  font-size: 18px;
+}
+
+@media screen and (max-width:800px) {
+  .section-footerHome .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:30px;
+    padding: 35px 0px;
+  }
+}
+
+
+/* .footerHome{
+    background-color: #5a5959;
+} */
+/* .section2 {
   background-color: #b10e0e;
 }
 .section3 {
   background-color: #1ee0c0;
-}
+} */
