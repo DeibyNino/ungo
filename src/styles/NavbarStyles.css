@@ -36,27 +36,28 @@ nav ul li a:hover {
   height: 4.3rem;
 }
 
+/* media query para el ajuste del menu a dispositivos mobiles  */
 @media (max-width: 768px) {
- .nav-bar {
-  flex-direction: column;
-  align-items: center;
- }
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
 
- .nav-bar img {
-  height: 4.5rem;
- }
+  .nav-bar img {
+    height: 3.5rem;
+  }
 
- nav ul {
-  flex-direction: column;
- }
+  nav ul {
+    flex-direction: column;
+  }
 
- nav ul li {
-  margin: 10px;
-  display: block;
-  border-bottom: 1px solid #fff;
- }
+  nav ul li {
+    margin: 10px;
+    display: block;
+    border-bottom: 1px solid #fff;
+  }
 
- nav ul li a {
-  padding: 10px;
- }
- }
+  nav ul li a {
+    padding: 10px;
+  }
+}
