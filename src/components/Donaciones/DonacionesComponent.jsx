@@ -1,10 +1,10 @@
 import React from "react";
-import ungo from "../../assets/images/Donaciones/ungo.png"
-import ungo from "../../assets/images/Donaciones/jjj.jpeg"
-import ungo from "../../assets/images/Donaciones/ppp.jpeg"
-import ungo from "../../assets/images/Donaciones/cl.jpeg"
-import ungo from "../../assets/images/Donaciones/seguridad.jpeg"
-import ungo from "../../assets/images/Donaciones/silla.jpeg"
+import rolito from "../../assets/images/Donaciones/ungo.png"
+import rolito from "../../assets/images/Donaciones/jjj.jpeg"
+import rolito from "../../assets/images/Donaciones/ppp.jpeg"
+import rolito from "../../assets/images/Donaciones/cl.jpeg"
+import rolito from "../../assets/images/Donaciones/seguridad.jpeg"
+import rolito from "../../assets/images/Donaciones/silla.jpeg"
 
 
 
@@ -12,7 +12,7 @@ const DonacionesComponent = () => {
   return (
     <div class="donaciones-rolito">
       <div class="imagen-ungo">
-        <img src={ungo} alt="" />
+        <img src={rolito} className="ungo1" />{""}
       </div>
       <div className="title-donaciones">
         <h1>Donaciones </h1>
