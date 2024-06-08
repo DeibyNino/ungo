@@ -2,9 +2,11 @@
 // CONFIGURACIÓN ABOUT HOME //
 
 import React from 'react'
-import AboutImage from "../../../assets/images/home/logoungo.png"
+import AboutImage from "../../../assets/images/home/logo2ungo.png"
+import { useNavigate } from 'react-router-dom'
 
 const AboutHome = () => {
+  const navigate = useNavigate()
   return (
     <div className='section-home-about'>
  
@@ -18,7 +20,9 @@ const AboutHome = () => {
     autónomos con valores y principios para la constitución de una mejor sociedad.
     </p>
 
-    <button className='button-sectionabout-home'>Conoce Más </button>
+    <button className='button-sectionabout-home'
+    onClick={()=>navigate("/about-page")}
+    >Conoce Más </button>
     </div>
     </div>
 

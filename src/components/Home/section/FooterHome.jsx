@@ -13,7 +13,7 @@ const FooterHome = () => {
      <div className='box-footer'>
      <figure>
       <a href='#'>
-      <img src={LogoFooter} className='logo-footer-home' /> {""}
+      <img src={LogoFooter} className='' /> {""}
       </a>
      </figure>
      </div>
@@ -39,9 +39,9 @@ const FooterHome = () => {
      </div>
     
 
-     <div className='grupo-2'>
-     <small> Copyright, 2024 <b>Ungo</b> - Todos los Derechos Reservados</small>
-     </div>
+     {/* <div className='grupo-2'>
+     <small> © 2021 <b>UNGO</b> - Todos los Derechos Reservados</small>
+     </div> */}
 
     </footer>
   )

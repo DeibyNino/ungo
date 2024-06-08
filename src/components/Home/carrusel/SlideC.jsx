@@ -1,8 +1,10 @@
 // SLIDE SEDES //
 
 import React from 'react'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 const SlideC = () => {
+  const navigate = useNavigate()
   return (
     <div className='content-slideC'>
   
@@ -13,7 +15,9 @@ const SlideC = () => {
     <p>
     </p>
 
-    <button className='button-slideC'> Conoce Más </button>
+    <button className='button-slideC'
+    onClick={()=>navigate("/sedes-page")}
+    > Instalaciones Educativas </button>
 
     </div>
 

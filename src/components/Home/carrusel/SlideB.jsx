@@ -1,8 +1,12 @@
 // SLIDE CURSOS //
 
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const SlideB = () => {
+  const navigate = useNavigate()
+
+
   return (
    
   <main className='swiper-slideB-content'>
@@ -12,7 +16,9 @@ const SlideB = () => {
   <p>
   Estudia con una metodología  de aprendizaje que permite la formación de jóvenes y adultos íntegros, autónomos con valores y principios para la constitución de una mejor sociedad.
   </p>
-  <button className='button-slideB'> Cursos Disponibles </button>
+  <button className='button-slideB'
+  onClick={()=>navigate("/cursos-page")}
+  > Cursos Disponibles </button>
   </div>
 
   </main>
