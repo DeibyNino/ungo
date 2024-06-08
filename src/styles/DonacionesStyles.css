@@ -1,3 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #3a3838;
+}
+
+.slider-box{
+  width: 1280px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+
+.slider-box ul{
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.textoc{
+  position: absolute;
+  text-align: center;
+  padding: 0 250px;
+  top: 205px;
+  color: #f8f7f5;
+}
+
+.texto h2{
+font-size: 45px;
+margin-bottom: 35px;
+}
+
+.slider-box img{
+  width: 100%;
+}
+
 .mainDonaciones {
   display: flex;
   flex-direction: column;
@@ -25,7 +73,7 @@ align-content: cover;
 }
 
 .title-donaciones h1{
-  color: #be001f; /* #ffb91b #ff9500 #be001f paleta de colores*/
+  color: #ffb91f; /* #ffb91b #ff9500 #be001f paleta de colores*/
   text-align: center;
   font-weight: bolder; /* letra mas pesada */
   font-family: Arial, Helvetica, sans-serif;
@@ -34,7 +82,7 @@ align-content: cover;
 }
 
 .subtitulo h1{
-  color: #be001f; /* #ffb91b #ff9500 #be001f paleta de colores*/
+  color: #ffb91f; /* #ffb91b #ff9500 #be001f paleta de colores*/
   text-align: center;
   font-weight: bolder; /* letra mas pesada */
   font-family: Arial, Helvetica, sans-serif;
@@ -89,11 +137,42 @@ align-content: cover;
   overflow: hidden;
 }
 
+@keyframes slide {
+  0% { margin-left: 0; }
+  20% { margin-left: 0; }
+
+  25% { margin-left:-100%; }
+  45% { margin-left:-100%; }
+
+  50% { margin-left:-200%; }
+  70% { margin-left:-200%; }
+
+  75% { margin-left:-300%; }
+  100% { margin-left:-300%; }
+}
+
 @media (max-width:700px){
   header{
       flex-direction: column;
   }
   nav{
       padding: 10px 0pxx;
+  }
+  body{
+    padding: 30px;
+  }
+  .slider-box{
+    width: 100%;
+  }
+  .textoc{
+    top: 50px;
+    padding: 0 25px;
+  }
+  .textoc h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  .textoc p{
+    font-size: 15px;
   }
 }
