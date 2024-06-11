@@ -38,7 +38,7 @@ export default function App() {
         slidesPerView={1} // Slides en pantalla //
         centeredSlides={true}
         autoplay={{
-          delay: 40000, // Tiempo de cambio entre slides //
+          delay: 80000, // Tiempo de cambio entre slides //
           disableOnInteraction: false,
         }}
         pagination={{

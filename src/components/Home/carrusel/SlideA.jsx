@@ -2,9 +2,12 @@
 
 import React from 'react'
 import LogoUngo from "../../../assets/images/home/logoungo.png"
+import {useNavigate} from "react-router-dom"
 
 
 const SlideA = () => {
+  const navigate = useNavigate()
+
   return (
     <div className='wrapper-slideA'>
     <img src={LogoUngo} className='logo-slideA'/> {""}
@@ -18,7 +21,9 @@ const SlideA = () => {
       </p>
 
       <div>
-      <button className='button-slideA'>Nuestra Misión </button>
+      <button className='button-slideA'
+      onClick={()=>navigate("/about-page")}
+      >Nuestra Misión </button>
 
       </div>
     </div>

@@ -2,8 +2,11 @@
 // CONFIGURACIÓN SEDES HOME //
 
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+
 
 const SedesHome = () => {
+  const navigate = useNavigate()
   return (
     <div className='section-home-sedes'>
 
@@ -11,7 +14,9 @@ const SedesHome = () => {
 
     <h1>Conoce Nuestra Sedes</h1>
 
-    <button> Ahora </button>
+    <button
+    onClick={()=>navigate("/sedes-page")}
+    > Instalaciones Educativas  </button>
 
     </div>
     

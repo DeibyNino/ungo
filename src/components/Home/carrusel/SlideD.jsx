@@ -2,9 +2,11 @@
 
 import React from 'react'
 import ImageDonaciones from "../../../assets/images/home/donacionesungo.jpg";
+import { useNavigate } from 'react-router-dom';
 
 
 const SlideD = () => {
+  const navigate = useNavigate()
   return (
     <div className='wrapper-slideD'>
     <img src={ImageDonaciones} className='image-slideD'/> {""}
@@ -18,7 +20,9 @@ const SlideD = () => {
 
 
      <div>
-     <button className='button-slideD'> Es Tu Momento </button>
+     <button className='button-slideD'
+     onClick={()=>navigate("/donaciones-page")}
+     > Es Tu Momento </button>
      </div>
 
      </div>
