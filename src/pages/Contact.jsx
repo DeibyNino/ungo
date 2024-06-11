@@ -1,22 +1,19 @@
 import React from "react";
-import fondo from "../assets/imagesContact/ungo.jpg";
+import Paula from "../assets/images/students/patito.png";
 import { FaPhoneAlt, FaMapMarkedAlt } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import "../styles/ContactStyles.css";
 
 import ContactForm from "../components/Contact/ContactForm";
+import DevelopeByComponent from "../components/DevelopeByComponent";
 
 const Contact = () => {
   return (
-    <body>
+    <div className="main-contact">
       <section className="contact-section">
-        <h2 className="titulo">Contáctanos</h2>
+        <h2>Contáctanos</h2>
 
-        <div className="imagenes">
-          <img src={fondo} alt="Fondo" />
-        </div>
-
-        <div className="container">
+        <div className="container-contact">
           <div className="data-contact">
             <p className="contact-info">
               <FaPhoneAlt size={30} className="icon phone" />
@@ -53,7 +50,9 @@ const Contact = () => {
           </form>
         </div>
       </section>
-    </body>
+
+      <DevelopeByComponent name={"Paula Andrea Roldan Garcia"} image={Paula} />
+    </div>
   );
 };
 

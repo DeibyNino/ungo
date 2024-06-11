@@ -12,9 +12,9 @@ const Layout = () => {
     <div>
       <Navbar />
       <div
-        style={{
-          paddingTop: "50px",
-        }}
+      // style={{
+      //   paddingTop: "50px",
+      // }}
       >
         <Outlet />
       </div>
