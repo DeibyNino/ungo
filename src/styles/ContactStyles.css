@@ -1,5 +1,113 @@
-.main-contact {
-  background-color: blueviolet;
-  min-height: 100vh;
-  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.contact-section {
+  background-color: #fff;
+  padding: 60px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+.titulo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.imagenes {
+  position: relative;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+}
+
+h2 {
+  text-align: center;
+  color: #070707;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  display: inline-block;
+  background-color: #ffc400;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d20000;
+}
+
+.data-contact {
+  width: 400px;
+}
+
+.contact-info {
+  padding-left: 20px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.contact-info span {
+  font-weight: bold;
+}
+
+.contact-info .icon {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.contact-info .phone {
+  color: green;
+}
+
+.contact-info .address {
+  color: rgb(0, 0, 255);
+}
+
+.contact-info .email {
+  color: red;
 }
