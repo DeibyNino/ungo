@@ -849,8 +849,6 @@ body {
     font-size: 25px;
   }
 
-
-
   /* Resposive Section Welcome en Home */
 
   .title-sectionwelcome h1{
@@ -873,7 +871,7 @@ body {
   .main-sectionabout-home {
     flex-direction: column;
     max-width: 370px;
-    padding: .2rem;
+    padding: .3rem;
   }
 
   .main-sectionabout-home img {
