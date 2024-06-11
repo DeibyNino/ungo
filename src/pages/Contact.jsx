@@ -1,26 +1,33 @@
 import React from "react";
+import fondo from "../assets/imagesContact/ungo.jpg";
 import { FaPhoneAlt, FaMapMarkedAlt } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import "../styles/ContactStyles.css";
+
 import ContactForm from "../components/Contact/ContactForm";
 
 const Contact = () => {
   return (
     <body>
       <section className="contact-section">
-        <h2>Contáctanos</h2>
+        <h2 className="titulo">Contáctanos</h2>
+
+        <div className="imagenes">
+          <img src={fondo} alt="Fondo" />
+        </div>
+
         <div className="container">
           <div className="data-contact">
             <p className="contact-info">
-              <FaPhoneAlt size={30} color="" /> Telefono:{" "}
-              <span>+57 3160472448</span>
+              <FaPhoneAlt size={30} className="icon phone" />
+              Telefono: <span> +57 3160472448 </span>
             </p>
             <p className="contact-info">
-              <FaMapMarkedAlt size={30} color="" />
-              Direccion:<span></span>
+              <FaMapMarkedAlt size={30} className="icon address" />
+              Dirección Principal: <span> Cl 29 sur No.19d-40 </span>
             </p>
             <p className="contact-info">
-              <SiGmail size={30} color="" />
+              <SiGmail size={30} className="icon email" />
               Gmail: <span> estudiaungo@gmail.com </span>
             </p>
           </div>

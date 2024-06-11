@@ -18,10 +18,26 @@ body {
   display: flex;
   justify-content: center;
 }
+.titulo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.imagenes {
+  position: relative;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+}
 
 h2 {
   text-align: center;
-  color: #333;
+  color: #070707;
   margin-bottom: 40px;
 }
 
@@ -70,11 +86,28 @@ button:hover {
 }
 
 .contact-info {
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #333;
+  padding-left: 20px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
 }
+
 .contact-info span {
-  font-weight: 400;
-  color: #2d2b2b;
+  font-weight: bold;
+}
+
+.contact-info .icon {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.contact-info .phone {
+  color: green;
+}
+
+.contact-info .address {
+  color: rgb(0, 0, 255);
+}
+
+.contact-info .email {
+  color: red;
 }
