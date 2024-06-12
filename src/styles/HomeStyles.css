@@ -1,13 +1,13 @@
 /* DISEÑO SWIPER */
 
-#app {
+/* #app {
   height: 100%;
-}
-html,
+} */
+/* html,
 body {
   position: relative;
   height: 100%;
-}
+} */
 
 body {
   /* background: #eee; */
@@ -18,7 +18,10 @@ body {
   padding: 0; */
 }
 
-.swiper-slide{
+.main-home {
+  position: relative;
+}
+.swiper-slide {
   width: 98vw;
   height: 88vh;
   display: flex;
@@ -82,26 +85,26 @@ body {
 
 /* SLIDE A */
 
-.wrapper-slideA{
+.wrapper-slideA {
   margin: 15px;
   justify-content: left;
 }
 
-.logo-slideA{
+.logo-slideA {
   max-width: 70vh;
   float: left;
   border: 3px solid #fff;
   border-radius: 10px;
   margin-right: 15px;
-  background-position:center ;
+  background-position: center;
 }
 
-.box-title-slideA h1{
+.box-title-slideA h1 {
   color: #be001f;
   font-weight: bolder;
   font-style: italic;
   font-size: 4vw;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .box-title-slideA p {
@@ -113,87 +116,71 @@ body {
 }
 
 .box-title-slideA button {
- /* display: flex; */
- justify-content: center;
- align-items: center;
- background: #ff9500;
- margin: 22px;
- font-size: 4vh;
- font-weight: bolder;
- font-style: italic;
- font-family:Arial, Helvetica, sans-serif;
- border-radius: 15px;
- padding: 5px 15px;
- border: 1px solid #ff930a;
- cursor: pointer;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: #ff9500;
+  margin: 22px;
+  font-size: 4vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  padding: 5px 15px;
+  border: 1px solid #ff930a;
+  cursor: pointer;
 }
 
-.box-title-slideA button:hover{
- background: #ffb91b;
- margin: 22px;
- font-size: 4vh;
- font-weight: bolder;
- font-style: italic;
- font-family:Arial, Helvetica, sans-serif;
- border-radius: 15px;
- padding: 5px 15px;
- border: 1px solid #ff9500;
- transition: all ease-in-out 300ms;
- cursor: pointer;
+.box-title-slideA button:hover {
+  background: #ffb91b;
+  margin: 22px;
+  font-size: 4vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  padding: 5px 15px;
+  border: 1px solid #ff9500;
+  transition: all ease-in-out 300ms;
+  cursor: pointer;
 }
-
 
 /* SLIDE B CURSOS */
 
 .swiper-slideB-content {
   position: relative;
   height: 90vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),url("../assets/images/home/cursosestudiantes.jpg");;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.719)),
+    url("../assets/images/home/cursosestudiantes.jpg");
+
   background-position: center;
   background-size: cover;
   max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(10,1fr);
-  grid-template-rows: repeat(B, 1fr);
+  display: flex;
+  justify-content: right;
+  background-blend-mode: multiply;
 }
 
-
-.swiper-slideB-content::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, .6) ;
-}
-
-
-.swiper-slideB-content .info-slideB {
-  grid-column: 7 / 10;
-  grid-row: 3 / 7;
+.info-slideB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   z-index: 1;
+  width: 50%;
+  padding: 4em;
 }
 
 .swiper-slideB-content .info-slideB h1 {
-  color:#ff930a;
+  color: #ff930a;
   font-weight: bolder;
   font-style: italic;
-  font-size: 3vw;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.swiper-slideB-content .info-slideB p {
-  color:#fff;
-  font-weight: bolder;
-  text-align: center;
-  font-size: 1.2em;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.swiper-slideB-content .info-slideB button{
-  /* display: flex; */
+.button-slideB {
   justify-content: center;
   align-items: center;
   background: #be001f;
@@ -202,55 +189,38 @@ body {
   font-size: 3vh;
   font-weight: bolder;
   font-style: italic;
-  font-family:Arial, Helvetica, sans-serif;
-  border-radius: 8px ;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
   padding: 8px 28px;
   border: 1px solid #e70026;
   cursor: pointer;
 }
 
-.swiper-slideB-content .info-slideB button:hover {
-  background: #e70026;
-  color: #fff;
-  margin: 5px;
-  font-size: 3vh;
-  font-weight: bolder;
-  font-style: italic;
-  font-family:Arial, Helvetica, sans-serif;
-  border-radius: 8px ;
-  padding: 8px 28px;
-  border: 1px solid #be001f;
-  transition: all ease-in-out 300ms;
-  cursor: pointer;
-}
-
-
 /* SlIDE C SEDES */
 
-
-.content-slideC{
+.content-slideC {
   position: relative;
   height: 90vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../assets/images/home/slideCimage.jpg");;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("../assets/images/home/slideCimage.jpg");
   background-position: center;
   background-position: center;
   background-size: cover;
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(10,1fr);
-  grid-template-rows: repeat(B,1fr);
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(B, 1fr);
 }
 
-.content-slideC::before{
+.content-slideC::before {
   position: absolute;
   content: "";
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
-
 
 .content-slideC .info-slideC {
   grid-column: 2 / 10;
@@ -264,22 +234,11 @@ body {
   font-weight: bolder;
   font-style: italic;
   font-size: 3vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
   align-items: center;
   display: flex;
 }
-
-.content-slideC .info-slideC p {
-  color: #fff;
-  font-weight: bolder;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  font-size: 1.4em;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 
 .content-slideC .info-slideC button {
   /* display: flex; */
@@ -291,37 +250,26 @@ body {
   font-size: 4vh;
   font-weight: bolder;
   font-style: italic;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   border-radius: 20px;
   padding: 5px 25px;
-  border: 1px solid  #e70026;
+  border: 1px solid #e70026;
   cursor: pointer;
 }
 
 .content-slideC .info-slideC button:hover {
-  background: #e70026 ;
-  margin: 20px;
-  font-size: 4vh;
-  color: #fff;
-  font-weight: bolder;
-  font-style: italic;
-  font-family:Arial, Helvetica, sans-serif;
-  border-radius: 20px;
-  padding: 5px 25px;
-  border: 1px solid  #be001f;
+  background: #e70026;
   transition: all ease-in-out 300ms;
-  cursor: pointer;
 }
-
 
 /* SLIDE D  DONACIONES */
 
-.wrapper-slideD{
+.wrapper-slideD {
   margin: 1px;
   justify-content: left;
 }
 
-.image-slideD{
+.image-slideD {
   max-width: 70vh;
   float: left;
   border: 3px solid none;
@@ -329,13 +277,13 @@ body {
   margin-right: 120px;
 }
 
-.box-info-slideD h1{
+.box-info-slideD h1 {
   color: #be001f;
   font-weight: bolder;
   font-style: italic;
   margin-top: 100px;
   font-size: 4vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .box-info-slideD p {
@@ -359,53 +307,53 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 15px;
   padding: 5px 15px;
-  border:1px solid #ffb91b;
+  border: 1px solid #ffb91b;
   cursor: pointer;
 }
 
-.box-info-slideD button:hover{
+.box-info-slideD button:hover {
   background: #ffb91b;
   margin: 22px;
   font-size: 4vh;
   font-weight: bolder;
   font-style: italic;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   border-radius: 15px;
   padding: 5px 15px;
   border: 1px solid #ff9500;
   transition: all ease-in-out 300ms;
   cursor: pointer;
- }
+}
 
 /* SLIDE E CONTACTOS */
 
 .slideE-content {
-  position: relative;
   height: 90vh;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../assets/images/home/ungosedes.jpg");;
-  background-position:center ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.2)),
+    url("../assets/images/home/ungosedes.jpg");
+  background-position: center;
   background-size: cover;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(10,1fr);
-  grid-template-rows: repeat(B,1fr);
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-blend-mode: multiply;
+  /* grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(B, 1fr); */
 }
 
-.slideE-content::before {
+/* .slideE-content::before {
   position: absolute;
   content: "";
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, .6);
-}
+  background-color: rgba(0, 0, 0, 0.6);
+} */
 
-.slideE-content .info-slideE {
-  grid-column: 7/10 ;
-  grid-row: 3/7;
-  color: #fff;
-  z-index: 1;
+.info-slideE {
+  width: 50%;
 }
 
 .slideE-content .info-slideE h1 {
@@ -413,9 +361,8 @@ body {
   font-weight: bolder;
   font-style: italic;
   font-size: 4vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 
 .slideE-content .info-slideE button {
   /* display: flex; */
@@ -442,14 +389,47 @@ body {
   font-weight: bolder;
   font-style: italic;
   font-family: Arial, Helvetica, sans-serif;
-  border-radius:8px;
+  border-radius: 8px;
   padding: 8px 28px;
   border: 1px solid #be001f;
   transition: all ease-in-out 300ms;
   cursor: pointer;
 }
 
+@media screen and (max-width: 770px) {
+  .swiper-slideB-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
+  .info-slideB {
+    width: 100%;
+    padding: 1em;
+  }
+  .swiper-slideB-content .info-slideB h1 {
+    font-size: 2.2rem;
+  }
+  .info-slideB p {
+    font-size: 1.2rem;
+    padding: 1rem 2.6rem;
+  }
+  .content-slideC .info-slideC h1 {
+    font-size: 2.2rem;
+  }
+  .slideE-content {
+    justify-content: center;
+  }
+  .info-slideE {
+    width: 100%;
+    padding: 2em;
+  }
+  .slideE-content .info-slideE h1 {
+    font-size: 2.2rem;
+  }
+}
 
 /* SECTION HOME */
 
@@ -471,8 +451,6 @@ body {
   background-color: #5a5959;
 } */
 
-
-
 /* Section cursos - welcome*/
 
 .title-sectionwelcome h1 {
@@ -484,23 +462,22 @@ body {
   font-weight: bolder;
   font-style: italic;
   font-size: 4vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-
-.card-container-section{
- display: flex;
- justify-content: center;
- flex-wrap: wrap;
- margin-top: 10px;
+.card-container-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-.card{
+.card {
   width: 325px;
-  background-color:#0a1a2a;
+  background-color: #0a1a2a;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   margin: 20px;
 }
 
@@ -513,10 +490,10 @@ body {
   padding: 16px;
 }
 
-.card-content h3{
+.card-content h3 {
   font-size: 20px;
-  color:#fff;
-  margin-bottom:8px;
+  color: #fff;
+  margin-bottom: 8px;
   /* font-family: Arial, Helvetica, sans-serif; */
   font-style: italic;
   font-weight: bolder;
@@ -524,12 +501,11 @@ body {
   text-align: center;
 }
 
-
 /* Section Sedes Home */
 
-
 .info-sedeshome {
-  background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.9)),url("../assets/images/home/slideCimage.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("../assets/images/home/slideCimage.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -545,9 +521,8 @@ body {
   font-weight: bolder;
   font-style: italic;
   font-size: 4vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 
 .info-sedeshome button {
   /* display: flex; */
@@ -574,14 +549,12 @@ body {
   font-weight: bolder;
   font-style: italic;
   font-family: Arial, Helvetica, sans-serif;
-  border-radius:8px;
+  border-radius: 8px;
   padding: 8px 28px;
   border: 1px solid #be001f;
   transition: all ease-in-out 300ms;
   cursor: pointer;
 }
-
-
 
 /* Section About Home */
 
@@ -597,7 +570,7 @@ body {
   width: 420px;
 }
 
-.main-sectionabout-home{
+.main-sectionabout-home {
   width: 1130px;
   max-width: 95%;
   margin: 0 auto;
@@ -606,11 +579,11 @@ body {
   justify-content: space-around;
 }
 
-.about-texthome{
+.about-texthome {
   width: 550px;
 }
 
-.about-texthome h1{
+.about-texthome h1 {
   color: #be001f;
   font-size: 40px;
   text-transform: capitalize;
@@ -626,7 +599,6 @@ body {
   margin-bottom: 25px;
   letter-spacing: 2px;
 }
-
 
 .about-texthome p {
   color: #000;
@@ -645,27 +617,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 15px;
   padding: 13px 30px;
-  border:1px solid #ffb91b;
+  border: 1px solid #ffb91b;
   cursor: pointer;
 }
 
-.about-texthome button:hover{
+.about-texthome button:hover {
   background: #ffb91b;
   font-size: 3vh;
   font-weight: bolder;
   font-style: italic;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   border-radius: 15px;
   padding: 13px 30px;
   border: 1px solid #ff9500;
   transition: all ease-in-out 300ms;
   cursor: pointer;
- }
+}
 
 /* Section Donaciones Home */
 
-.description-donations{
-  background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)),url("../assets/images/home/cursosestudiantes.jpg");
+.description-donations {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("../assets/images/home/cursosestudiantes.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -681,9 +654,8 @@ body {
   font-weight: bolder;
   font-style: italic;
   font-size: 4vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 
 .description-donations button {
   /* display: flex; */
@@ -710,29 +682,27 @@ body {
   font-weight: bolder;
   font-style: italic;
   font-family: Arial, Helvetica, sans-serif;
-  border-radius:8px;
+  border-radius: 8px;
   padding: 8px 28px;
   border: 1px solid #be001f;
   transition: all ease-in-out 300ms;
   cursor: pointer;
 }
 
-
 /* Footer Section Home */
 
 .section-footerHome {
- width: 100%;
- /* background-color:white; */
+  width: 100%;
+  /* background-color:white; */
 }
-
 
 .section-footerHome .grupo-1 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap:50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
   padding: 45px 0px;
 }
 
@@ -748,14 +718,14 @@ body {
   width: 250px;
 }
 
-.section-footerHome .grupo-1 .box-description-footer h2{
+.section-footerHome .grupo-1 .box-description-footer h2 {
   color: #be001f;
   margin-bottom: 25px;
   text-align: center;
   font-size: 40px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .section-footerHome .grupo-1 .box-description-footer P {
@@ -768,14 +738,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.section-footerHome .grupo-1 .box-contactos-footer h2{
+.section-footerHome .grupo-1 .box-contactos-footer h2 {
   color: #be001f;
   margin-bottom: 25px;
   text-align: center;
   font-size: 40px;
   /* font-weight: bolder; */
   font-style: normal;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .section-footerHome .grupo-1 .box-contactos-footer P {
@@ -807,9 +777,7 @@ body {
   font-size: 18px;
 } */
 
-@media screen and (max-width:770px) {
-
-
+@media screen and (max-width: 770px) {
   /* Responsive Slide A */
 
   .wrapper-slideA {
@@ -830,19 +798,18 @@ body {
     margin-bottom: 10px;
   }
 
-
   /* Resposive Slide D */
 
   .wrapper-slideD {
     flex-direction: column;
   }
 
-  .wrapper-slideD img{
+  .wrapper-slideD img {
     height: 498px;
   }
 
   .wrapper-slideD h1 {
-    font-size:3vh;
+    font-size: 3vh;
   }
 
   .wrapper-slideD p {
@@ -851,11 +818,11 @@ body {
 
   /* Resposive Section Welcome en Home */
 
-  .title-sectionwelcome h1{
+  .title-sectionwelcome h1 {
     font-size: 3vh;
   }
 
-  .title-sectionwelcome h3{
+  .title-sectionwelcome h3 {
     font-size: 22px;
   }
 
@@ -871,7 +838,7 @@ body {
   .main-sectionabout-home {
     flex-direction: column;
     max-width: 370px;
-    padding: .3rem;
+    padding: 0.3rem;
   }
 
   .main-sectionabout-home img {
@@ -886,7 +853,6 @@ body {
     font-size: 25px;
   }
 
-
   /* Responsive Section Donaciones en Home */
 
   .section-donations h1 {
@@ -894,20 +860,18 @@ body {
     font-weight: bolder;
   }
 
-
   /* Resposive Info Contact en Home */
 
   .section-footerHome {
     flex-direction: column;
     max-width: 370px;
-    padding: .2rem;
+    padding: 0.2rem;
   }
 
   .section-footerHome .grupo-1 {
     width: 78%;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     padding: 35px 0px;
   }
-  
 }
