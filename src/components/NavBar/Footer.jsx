@@ -58,21 +58,21 @@ const Footer = () => {
               <ImFacebook2 color="#fff" size={50} />
             </a>
             <a
-              href="httpsg://https://www.facebook.com/profile.php?id=61555748215327"
+              href="https://kwai-video.com/u/@ungoestudiabie/hh5mTCmP"
               target="_blank"
               rel="noreferrer noopener"
             >
               <ImYoutube2 color="#fff" size={50} />
             </a>
             <a
-              href="httpsg://https://www.facebook.com/profile.php?id=61555748215327"
+              href="https://www.instagram.com/ungoestudia?utm_source=qr&igsh=MTg3cnJ6Zmtqc2lqMg=="
               target="_blank"
               rel="noreferrer noopener"
             >
               <ImInstagram color="#fff" size={50} />
             </a>
             <a
-              href="httpsg://https://www.facebook.com/profile.php?id=61555748215327"
+              href="https://www.tiktok.com/@ungo.estudia?_t=8nAuUyTGkWz&_r=1"
               target="_blank"
               rel="noreferrer noopener"
             >
