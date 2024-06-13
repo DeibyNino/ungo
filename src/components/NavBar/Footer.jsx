@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
           <div className="redes">
             <a
-              href="httpsg://https://www.facebook.com/profile.php?id=61555748215327"
+              href="https://www.facebook.com/profile.php?id=61555748215327&mibextid=JKhxCcgn07XyEHyd"
               target="_blank"
               rel="noreferrer noopener"
             >
