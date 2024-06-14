@@ -21,7 +21,7 @@ align-content: cover;
 }
 
 .imagen-ungo img{
- width: 250px;
+ width: 500px;
  filter: drop-shadow(5px 2px 5px  #3a3838)
 }
 
@@ -114,7 +114,7 @@ align-content: cover;
 }
 
 .form-donaciones{
-  box-shadow: 3px 2px 3px  #3a3838;
+  box-shadow: 3px 2px 3px  #131111;
   padding: 1rem ;
   border-radius: 10px ;
   width: 400px;
@@ -122,6 +122,7 @@ align-content: cover;
   flex-direction: column; /* colocar texto en columnas */
   gap: 1rem;
   align-items: center;
+  
 }
 
 
@@ -138,6 +139,7 @@ align-content: cover;
   border-radius: 15px;
   padding: 5px 15px;
   border: 1px solid #ff930a;
+  color: #fff;
 }
 
 .input-box {

@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../assets/images/Donaciones/ungo.png"
 import roloimg from "../../assets/images/Donaciones/jjj.jpeg"
 import { SiGmail } from "react-icons/si";
+import { TbPasswordUser } from "react-icons/tb";
 
 
 const DonacionesComponent = () => {
@@ -45,11 +46,13 @@ justifyContent:"center"}}
       <div className="form-donaciones">
 
         <div class="input-box">
-          <label>Email:</label>
+          <SiGmail size={30} className="gmail"/>
+          <label><strong>Gmail:</strong></label>
           <input type="gmail" placeholder="gmail" required />
         </div>
         <div class="input-box">
-          <label>Password</label>
+          <TbPasswordUser size={30} className="password"/>
+          <label><strong>Password:</strong></label>
           <input type="password" placeholder="password" required />
         </div>
         <div class="entrada-chack">
@@ -59,6 +62,7 @@ justifyContent:"center"}}
         <div class="donacion">
           <button> donar </button>
         </div>
+        <Link to="/contact">Ir a contacto</Link>
 </div>
       </div>
     </div>
