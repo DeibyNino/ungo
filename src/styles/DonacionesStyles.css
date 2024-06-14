@@ -1,50 +1,3 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-  background-color: #3a3838;
-}
-
-.slider-box{
-  width: 1280px;
-  height: auto;
-  margin: 50px auto 0;
-  overflow: hidden;
-}
-
-.slider-box ul{
-  display: flex;
-  padding: 0;
-  width: 400%;
-  animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-box li{
-  width: 100%;
-  list-style: none;
-  position: relative;
-}
-
-.textoc{
-  position: absolute;
-  text-align: center;
-  padding: 0 250px;
-  top: 205px;
-  color: #f8f7f5;
-}
-
-.texto h2{
-font-size: 45px;
-margin-bottom: 35px;
-}
-
-.slider-box img{
-  width: 100%;
-}
 
 .mainDonaciones {
   display: flex;
@@ -72,8 +25,73 @@ align-content: cover;
  filter: drop-shadow(5px 2px 5px  #3a3838)
 }
 
+.rolo1 img{
+  position: relative;
+  height: 150vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),url("../assets/images/Donaciones/jjj.jpeg ");;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(B, 1fr);
+}
+
+.rolo1 {
+  grid-column: 7 / 10;
+  grid-row: 3 / 7;
+  color: #fff;
+  z-index: 1;
+}
+
+.rolo1 h1 {
+  color:#be001f;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 2vw;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.rolo1 p {
+  color:#fff;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rolo1 button{
+  justify-content: center;
+  align-items: center;
+  background: #ff9500;
+  color: #fff;
+  margin: 5px;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 8px ;
+  padding: 8px 28px;
+  border: 1px solid #ff9500;
+}
+
+.rolo1 button :hover {
+  background: #ff9500;
+  color: #fff;
+  margin: 5px;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 8px ;
+  padding: 8px 28px;
+  border: 1px solid #be001f;
+  transition: all ease-in-out 300ms;
+}
+
+
 .title-donaciones h1{
-  color: #ffb91f; /* #ffb91b #ff9500 #be001f paleta de colores*/
+  color: #be001f; /* #ffb91b #ff9500 #be001f paleta de colores*/
   text-align: center;
   font-weight: bolder; /* letra mas pesada */
   font-family: Arial, Helvetica, sans-serif;
@@ -82,7 +100,7 @@ align-content: cover;
 }
 
 .subtitulo h1{
-  color: #ffb91f; /* #ffb91b #ff9500 #be001f paleta de colores*/
+  color: #be001f; /* #ffb91b #ff9500 #be001f paleta de colores*/
   text-align: center;
   font-weight: bolder; /* letra mas pesada */
   font-family: Arial, Helvetica, sans-serif;
@@ -106,12 +124,20 @@ align-content: cover;
   align-items: center;
 }
 
+
 .form-donaciones button{
-  padding: .5rem 2rem;
-  background: #000;
-  color: aliceblue;
-  font-weight: 700;
-  width: 200px;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  background: #ff9500;
+  margin: 22px;
+  font-size: 4vh;
+  font-weight: bolder;
+  font-style: italic;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  padding: 5px 15px;
+  border: 1px solid #ff930a;
 }
 
 .input-box {
